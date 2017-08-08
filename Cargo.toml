@@ -1,0 +1,8 @@
+[package]
+name = "keyboard-app"
+version = "0.1.0"
+authors = ["nico <nicguzzo@gmail.com>"]
+
+[dependencies]
+serial = "0.4.0"
+websocket = "0.20.2"
