@@ -20,18 +20,18 @@
     {
       "name": "standard",
       "left": [
-        "ESC" ,"1!","2@","3#","4$","5%"        ,
-        "q"   ,"w" ,"e" ,"r" ,"t" ,"TAB"       ,
-        "a"   ,"s" ,"d" ,"f" ,"g" ,"SHIFT"     ,
-        "z"   ,"x" ,"c" ,"v" ,"b" ,"SPACE"     ,
-        "CONTROL","SUPER","ALT","LAYER","INTRO"
+        "ESC","1","2","3","4","5",
+        "Q" ,"W","E","R","T","TAB"  ,
+        "A" ,"S","D","F","G","CAPSLOCK",
+        "Z" ,"X","C","V","B","LSHIFT",
+        "LCTRL"  ,"LMETA","LALT"  ,"CMD","","ENTER"
       ],
       "right": [
-        "=?"   ,"6^"  ,"7&","8*","9(","0)"  ,
-        "[]"   ,"y"   ,"u" ,"i" ,"o" ,"p"   ,
-        "{}"   ,"h"   ,"j" ,"k" ,"l" ,"\\|" ,
-        "SPACE","n"   ,"m" ,"," ,"." ,"/"   ,
-        "INTRO","ALTG",""  ,""  ,""  ,""    
+        "EQUAL","6","7","8","9","0",
+        ""     ,"Y","U","I","O","P",
+        ""     ,"H","J","K","L","" ,
+        "SPACE","N","M","" ,"" ,"" ,
+        "ENTER","RALT" ,"","","BKSP","DELETE"
       ]
     }
   ]

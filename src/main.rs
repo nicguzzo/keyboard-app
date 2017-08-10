@@ -32,24 +32,23 @@ fn main () {
         request.reject().unwrap();
         return;
       }
-      let port="/dev/ttyACM0";
-      let mut port = serial::open(port).unwrap();
-      port.configure(&SETTINGS).unwrap();
-      port.set_timeout(Duration::from_secs(1)).unwrap();
-
-      //let mut buf: Vec<u8> = "hi";
+      let port_s="/dev/ttyACM0";
+      
+      let mut port =serial::open(port_s).unwrap();
       let s = String::from("hello");
       let bytes = s.into_bytes();
-
+      port.configure(&SETTINGS).unwrap();
+      port.set_timeout(Duration::from_secs(1)).unwrap();
       port.write(&bytes).unwrap();
-
+      
       let mut client = request.use_protocol("rust-websocket").accept().unwrap();
+      //let mut client = request.accept().unwrap();
 
       let ip = client.peer_addr().unwrap();
 
       println!("Connection from {}", ip);
 
-      let message = OwnedMessage::Text("Hello".to_string());
+      let message = OwnedMessage::Text("{\"opcode\":\"hello\"}".to_string());
       client.send_message(&message).unwrap();
 
       let (mut receiver, mut sender) = client.split().unwrap();
@@ -77,14 +76,15 @@ fn main () {
                   let mut contents = String::new();
                   file.read_to_string(&mut contents).unwrap();
                   
-                  let mut op=String::from("{'opcode': 'conf' ,'payload': ")+&contents;
+                  let mut op=String::from("{\"opcode\": \"conf\" ,\"payload\": ")+&contents;
                   op=op+&String::from("}");
                   let msg = Message::text(op);
                   let _ = sender.send_message(&msg);
                 },
                 _ => {
                     println!("cmd");
-                    port.write(&mm.as_bytes()).unwrap();
+                    //prt.unwrap().write(&mm.as_bytes()).unwrap();
+                    port.write(&mm.as_bytes()).unwrap();                   
                 } 
             }
           }
