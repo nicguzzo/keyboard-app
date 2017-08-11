@@ -3,42 +3,51 @@ import Key from './Key'
 
 class Keys extends Component {
 
-  getLeft(n){
+  get_code(side,n){
     const ni = parseInt(n)
     const { conf, layer } = this.props;
-    return (conf.layers) ? conf.layers[layer].left[ni]: null;
+    const {scancodes}=this.props    
+    //return (conf.layers) ? conf.layers[layer][side][ni]: null;
+    if (conf.layers){
+      const code=conf.layers[layer][side][ni]
+      const {us}=scancodes.layouts;      
+      return (us[code])? us[code] : code;
+    }else{
+      return null;
+    }
   }
-  getRight(n){
-    const ni = parseInt(n)
-    const { conf, layer } = this.props;
-    return (conf.layers) ? conf.layers[layer].right[ni]: null;
-  }
+  
 
   render() {
-    let amountRows = [...Array(5).keys()];
-    amountRows = amountRows.map(x => [...Array(6).keys()]);
+    let col = [...Array(5).keys()];
+    col = col.map(x => [...Array(6).keys()]);        
     return (
       <div className="keys">
         <ul id="left_keys">
-          { amountRows.map( (row, i) => <li key={i}>
-              {row.map((v, j) =>
-                <Key key={j}
-                  position={this.getLeft(i+j)}
-                />
+          { col.map( (row, i) => 
+            <li>
+              {row.map((v, j) =>                 
+                <div className="wrap">
+                  { (j==5 && i>2) && <div className="separador"></div> }
+                  <Key cod={this.get_code("left",i*6+j)}/> 
+                </div>
               )}
             </li>
           )}
         </ul>
+        <div className="separador"></div>
         <ul id="right_keys">
-          { amountRows.map( (row, i) => <li key={i}>
+          { col.map( (row, i) => 
+            <li>
               {row.map((v, j) =>
-                <Key key={j}
-                  position={this.getRight(i+j)}
-                />
+                <div className="wrap">
+                  { (j==0 && i < 3) && <div className="separador"></div> }
+                  <Key cod={this.get_code("right",i*6+j)} />
+                  { (j==0 && i >= 3) && <div className="separador"></div> }
+                </div>
               )}
             </li>
           )}
-
         </ul>
       </div>
     );

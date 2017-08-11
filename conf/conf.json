@@ -24,14 +24,14 @@
         "Q" ,"W","E","R","T","TAB"  ,
         "A" ,"S","D","F","G","CAPSLOCK",
         "Z" ,"X","C","V","B","LSHIFT",
-        "LCTRL"  ,"LMETA","LALT"  ,"CMD","","ENTER"
+        "LCTRL"  ,"LMETA","LALT"  ,"CMD","LEFTBRACE","RIGHTBRACE"
       ],
       "right": [
-        "EQUAL","6","7","8","9","0",
-        ""     ,"Y","U","I","O","P",
-        ""     ,"H","J","K","L","" ,
-        "SPACE","N","M","" ,"" ,"" ,
-        "ENTER","RALT" ,"","","BKSP","DELETE"
+        "EQUAL"    ,"6","7","8","9","0",
+        "SEMICOLON","Y","U","I","O","P",
+        "DOT"      ,"H","J","K","L","BKSP" ,
+        "ENTER"    ,"N","M","COMMA" ,"DOT" ,"DELETE" ,
+        "SPACE"    ,"RALT" ,"RMETA","RCTRL","BACKSLASH","SLASH"
       ]
     }
   ]

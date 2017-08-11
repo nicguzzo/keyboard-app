@@ -11,7 +11,7 @@ use websocket::sync::Server;
 use websocket::Message;
 use websocket::ws::dataframe::DataFrame;
 use std::fs::File;
-//use std::io::prelude::*;
+use std::env;
 
 const SETTINGS: serial::PortSettings = serial::PortSettings {
   baud_rate:    serial::Baud115200,
@@ -33,10 +33,10 @@ fn main () {
         return;
       }
       let port_s="/dev/ttyACM0";
-      
-      let mut port =serial::open(port_s).unwrap();
       let s = String::from("hello");
       let bytes = s.into_bytes();
+
+      let mut port =serial::open(port_s).unwrap();
       port.configure(&SETTINGS).unwrap();
       port.set_timeout(Duration::from_secs(1)).unwrap();
       port.write(&bytes).unwrap();
@@ -82,9 +82,8 @@ fn main () {
                   let _ = sender.send_message(&msg);
                 },
                 _ => {
-                    println!("cmd");
-                    //prt.unwrap().write(&mm.as_bytes()).unwrap();
-                    port.write(&mm.as_bytes()).unwrap();                   
+                    println!("cmd");                    
+                    port.write(&mm.as_bytes()).unwrap();                    
                 } 
             }
           }

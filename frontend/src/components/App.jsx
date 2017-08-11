@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Keys from './Keys'
 import '../styles/App.css';
-function getScancodes(){
-
-}
 
 class App extends Component {
   constructor(props) {
@@ -72,9 +69,6 @@ class App extends Component {
         this.socket.send(cmd);
         console.log(cmd);
       }
-      //const cmd = `${side.slice(0,1)}${layer}${n}${key}`;
-      //this.socket.send(cmd);
-      //console.log(cmd);
     });
   }
 
@@ -109,7 +103,8 @@ class App extends Component {
           />
           <input type="submit" value="Send"/>
         </form>
-        <Keys conf={this.state.conf} layer={this.state.layer}/>
+        <Keys conf={this.state.conf} layer={this.state.layer} scancodes={this.scancodes}/>
+        <br/>
         <button onClick={this.handleUpload} > upload</button>
       </div>
     );
