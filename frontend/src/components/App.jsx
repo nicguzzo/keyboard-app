@@ -69,6 +69,7 @@ class App extends Component {
         this.socket.send(cmd);
         console.log(cmd);
       }
+      return true;
     });
   }
 
