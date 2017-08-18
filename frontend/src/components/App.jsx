@@ -71,12 +71,13 @@ class App extends Component {
       }
       return true;
     });
+    
   }
 
   handleUpload(event) {
     this.sendKeys(1,'left');
     this.sendKeys(1,'right');
-
+    this.socket.send("save");
     event.preventDefault();
   }
 

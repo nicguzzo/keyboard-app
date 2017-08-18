@@ -36,10 +36,10 @@ fn main () {
       let s = String::from("hello");
       let bytes = s.into_bytes();
 
-      //let mut port =serial::open(port_s).unwrap();
-      //port.configure(&SETTINGS).unwrap();
-      //port.set_timeout(Duration::from_secs(1)).unwrap();
-      //port.write(&bytes).unwrap();
+      let mut port =serial::open(port_s).unwrap();
+      port.configure(&SETTINGS).unwrap();
+      port.set_timeout(Duration::from_secs(1)).unwrap();
+      port.write(&bytes).unwrap();
       
       let mut client = request.use_protocol("rust-websocket").accept().unwrap();
       //let mut client = request.accept().unwrap();
@@ -83,7 +83,7 @@ fn main () {
                 },
                 _ => {
                     println!("cmd");                    
-                    //port.write(&mm.as_bytes()).unwrap();                    
+                    port.write(&mm.as_bytes()).unwrap();                    
                 } 
             }
           }
