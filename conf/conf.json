@@ -20,18 +20,18 @@
     {
       "name": "standard",
       "left": [
-        "ESC","1","2","3","4","5",
-        "Q" ,"W","E","R","T","TAB"  ,
-        "A" ,"S","D","F","G","CAPSLOCK",
-        "Z" ,"X","C","V","B","LSHIFT",
-        "LCTRL"  ,"LMETA","LALT"  ,"CMD","LEFTBRACE","RIGHTBRACE"
+        "ESC"     ,"1","2","3","4","5",
+        "TAB"     ,"Q","W","E","R","T",
+        "CAPSLOCK","A","S","D","F","G",
+        "LSHIFT"  ,"Z","X","C","V","B",
+        "LCTRL"  ,"LMETA","LALT"  ,"CMD","ENTER","LEFTBRACE"
       ],
       "right": [
-        "EQUAL"    ,"6","7","8","9","0",
-        "SEMICOLON","Y","U","I","O","P",
-        "DOT"      ,"H","J","K","L","BKSP" ,
-        "ENTER"    ,"N","M","COMMA" ,"DOT" ,"DELETE" ,
-        "SPACE"    ,"RALT" ,"RMETA","RCTRL","BACKSLASH","SLASH"
+        "6"             ,"7"     ,"8"     ,"9"        ,"0"        ,"EQUAL",
+        "Y"             ,"U"     ,"I"     ,"O"        ,"P"        ,"SEMICOLON",
+        "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
+        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"GRAVE"    ,"HOME",
+        "RIGHTBRACE"    ,"SPACE" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
       ]
     }
   ]

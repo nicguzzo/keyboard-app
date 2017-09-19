@@ -28,8 +28,8 @@ class Keys extends Component {
             <li>
               {row.map((v, j) =>
                 <div className="wrap">
-                  { (j === 5 && i > 2) && <div className="separador"></div> }
-                  <Key cod={this.get_code("left", i * 6 + j)}/>
+                  { (j === 4 && i > 3) && <div className="separador"></div> }
+                  <Key cod={this.get_code("left", i * 6 + j)} num={i * 6 + j}/>
                 </div>
               )}
             </li>
@@ -41,9 +41,9 @@ class Keys extends Component {
             <li>
               {row.map((v, j) =>
                 <div className="wrap">
-                  { (j === 0 && i < 3) && <div className="separador"></div> }
-                  <Key cod={this.get_code("right", i * 6 + j)} />
-                  { (j === 0 && i >= 3) && <div className="separador"></div> }
+                  { (j === 0 && i < 4) && <div className="separador"></div> }
+                  <Key cod={this.get_code("right", i * 6 + j)} num={i * 6 + j}/>
+                  
                 </div>
               )}
             </li>

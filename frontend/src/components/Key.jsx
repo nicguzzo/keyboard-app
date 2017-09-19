@@ -4,7 +4,10 @@ class Key extends Component {
 
   render () { 
     return <div className="key">      
-      {this.props.cod}
+      {this.props.cod} 
+      <br/>
+      <br/>
+      key: {this.props.num}
     </div>;
   }
 }
