@@ -9,7 +9,6 @@ $scancodes=JSON.parse(scancodes_file)
 
 $serialport = Serial.new '/dev/ttyACM0', 115200
 
-puts $scancodes["modifiers"].index("RALT")
 def sendKeys(layer,side)  
   $conf["layers"][layer][side].each_with_index do |key, i|
     n ="%02d" % i;    
