@@ -1,13 +1,22 @@
 #!/usr/bin/ruby
 require 'json'
 require 'rubyserial'
+require 'fileutils'
 
-conf_file = File.read('../conf/conf.json')
+
+unless Dir.exist?("#{Dir.home}/.ninjakb")
+  FileUtils.mkdir_p("#{Dir.home}/.ninjakb")
+end
+unless File.exist?("#{Dir.home}/.ninjakb/conf.json")
+  FileUtils.cp('../conf/conf.json',"#{Dir.home}/.ninjakb/")
+end
+
+conf_file = File.read("#{Dir.home}/.ninjakb/conf.json")
 scancodes_file = File.read('../frontend/public/scancodes.json')
 $conf=JSON.parse(conf_file)
 $scancodes=JSON.parse(scancodes_file)
 
-$serialport = Serial.new '/dev/ttyACM0', 115200
+$serialport = Serial.new $conf["device"], 115200
 
 def sendKeys(layer,side)  
   $conf["layers"][layer][side].each_with_index do |key, i|

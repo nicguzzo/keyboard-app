@@ -1,4 +1,5 @@
 {
+  "device": "/dev/ttyACM0",
   "layers":[
     {
       "name": "commands",
@@ -30,7 +31,7 @@
         "6"             ,"7"     ,"8"     ,"9"        ,"0"        ,"EQUAL",
         "Y"             ,"U"     ,"I"     ,"O"        ,"P"        ,"SEMICOLON",
         "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
-        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"GRAVE"    ,"HOME",
+        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"APOSTROPHE"    ,"HOME",
         "RIGHTBRACE"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
       ]
     }
