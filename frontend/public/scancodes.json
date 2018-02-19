@@ -10,6 +10,9 @@
     "RMETA",
     "CMD"
   ],
+  "commands":{
+     "MOUSE_MV_Y_U_10PX":"MM-0010+0000"
+  },
   "codes":{
     "A":"04",
     "B":"05",

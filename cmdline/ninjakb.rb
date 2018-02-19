@@ -26,7 +26,12 @@ def sendKeys(layer,side)
       t='m'
       k=key
     else
-      k=$scancodes["codes"][key]
+      if key.match(/^M[ULDR]/)
+	      t='p'
+	      k=key
+      else  
+	      k=$scancodes["codes"][key]
+      end
     end
     if k
       cmd = "#{side[0]}#{layer}#{n}#{t}#{k}"

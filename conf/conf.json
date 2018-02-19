@@ -4,32 +4,23 @@
     {
       "name": "commands",
       "left": [
-<<<<<<< HEAD
+        "" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"" ,"MM+00+10" ,"" ,""      ,"" ,
         "" ,"" ,"" ,"" ,""      ,"" ,
         "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,"LAYER" ,"" 
-=======
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        "NEXT" ,"" ,"" ,"" ,""      ,"" ,
-        "PREV" ,"" ,"" ,"" ,"LAYER" ,""
->>>>>>> f72b7ad0c50854a6b5ac59f698d4ff7bbc7d691f
+        "" ,"" ,"" ,"" ,"" ,"" 
       ],
       "right": [
         ""     ,"" ,"" ,"" ,"" ,"" ,
         ""     ,"UP" ,"" ,"" ,"" ,"" ,
         "LEFT" ,"DOWN" ,"RIGHT" ,"" ,"" ,"" ,
-        "NEXT" ,"" ,"" ,"" ,"" ,"" ,
-        "PREV" ,"" ,"" ,"" ,"" ,""
+        "" ,"" ,"" ,"" ,"" ,"" ,
+        "CMD" ,"" ,"" ,"" ,"" ,""
       ]
     },
     {
       "name": "standard",
       "left": [
-<<<<<<< HEAD
         "ESC"     ,"1","2","3","4","5",
         "TAB"     ,"Q","W","E","R","T",
         "GRAVE"   ,"A","S","D","F","G",
@@ -42,20 +33,6 @@
         "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
         "N"             ,"M"     ,"COMMA" ,"DOT"      ,"APOSTROPHE"    ,"HOME",
         "CMD"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
-=======
-        "ESC"    , "1"     , "2"    , "3"   , "4"     , "5"         ,
-        "TAB"    , "Q"     , "W"    , "E"   , "R"     , "T"         ,
-        "GRAVE"  , "A"     , "S"    , "D"   , "F"     , "G"         ,
-        "LSHIFT" , "Z"     , "X"    , "C"   , "V"     , "B"         ,
-        "LCTRL"  , "LMETA" , "LALT" , "CMD" , "SPACE" , "BACKSPACE"
-      ]          ,
-      "right": [
-        "6"             ,"7"     ,"8"     ,"9"        ,"0"          ,"EQUAL",
-        "Y"             ,"U"     ,"I"     ,"O"        ,"P"          ,"MINUS",
-        "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"       ,"APOSTROPHE",
-        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"SLASH"      ,"RSHIFT",
-        "SEMICOLON"     ,"ENTER" ,"RALT"  ,"BACKSLASH","LEFTBRACE"  ,"RIGHTBRACE"
->>>>>>> f72b7ad0c50854a6b5ac59f698d4ff7bbc7d691f
       ]
     }
   ]
