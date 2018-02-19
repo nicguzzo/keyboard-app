@@ -3,7 +3,6 @@ require 'json'
 require 'rubyserial'
 require 'fileutils'
 
-
 unless Dir.exist?("#{Dir.home}/.ninjakb")
   FileUtils.mkdir_p("#{Dir.home}/.ninjakb")
 end
@@ -37,6 +36,8 @@ def sendKeys(layer,side)
   end  
 end
 
+sendKeys(0,"left")
+sendKeys(0,"right")
 sendKeys(1,"left")
 sendKeys(1,"right")
 $serialport.write("save")

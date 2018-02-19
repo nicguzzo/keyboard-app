@@ -4,16 +4,16 @@
     {
       "name": "commands",
       "left": [
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        ""     ,"" ,"" ,"" ,""      ,"" ,
-        "NEXT" ,"" ,"" ,"" ,""      ,"" ,
-        "PREV" ,"" ,"" ,"" ,"LAYER" ,"" 
+        "" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"" ,"" ,"" ,"LAYER" ,"" 
       ],
       "right": [
         ""     ,"" ,"" ,"" ,"" ,"" ,
-        ""     ,"" ,"" ,"" ,"" ,"" ,
-        ""     ,"" ,"" ,"" ,"" ,"" ,
+        ""     ,"UP" ,"" ,"" ,"" ,"" ,
+        "LEFT" ,"DOWN" ,"RIGHT" ,"" ,"" ,"" ,
         "NEXT" ,"" ,"" ,"" ,"" ,"" ,
         "PREV" ,"" ,"" ,"" ,"" ,"" 
       ]
@@ -23,16 +23,16 @@
       "left": [
         "ESC"     ,"1","2","3","4","5",
         "TAB"     ,"Q","W","E","R","T",
-        "GRAVE","A","S","D","F","G",
+        "GRAVE"   ,"A","S","D","F","G",
         "SHIFT"   ,"Z","X","C","V","B",
-        "LCTRL"  ,"LMETA","LALT"  ,"CMD","SPACE","LEFTBRACE"
+        "LCTRL"  ,"LMETA","LALT"  ,"RIGHTBRACE","SPACE","LEFTBRACE"
       ],
       "right": [
         "6"             ,"7"     ,"8"     ,"9"        ,"0"        ,"EQUAL",
         "Y"             ,"U"     ,"I"     ,"O"        ,"P"        ,"SEMICOLON",
         "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
         "N"             ,"M"     ,"COMMA" ,"DOT"      ,"APOSTROPHE"    ,"HOME",
-        "RIGHTBRACE"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
+        "CMD"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
       ]
     }
   ]
