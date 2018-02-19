@@ -8,31 +8,31 @@
         ""     ,"" ,"" ,"" ,""      ,"" ,
         ""     ,"" ,"" ,"" ,""      ,"" ,
         "NEXT" ,"" ,"" ,"" ,""      ,"" ,
-        "PREV" ,"" ,"" ,"" ,"LAYER" ,"" 
+        "PREV" ,"" ,"" ,"" ,"LAYER" ,""
       ],
       "right": [
         ""     ,"" ,"" ,"" ,"" ,"" ,
         ""     ,"" ,"" ,"" ,"" ,"" ,
         ""     ,"" ,"" ,"" ,"" ,"" ,
         "NEXT" ,"" ,"" ,"" ,"" ,"" ,
-        "PREV" ,"" ,"" ,"" ,"" ,"" 
+        "PREV" ,"" ,"" ,"" ,"" ,""
       ]
     },
     {
       "name": "standard",
       "left": [
-        "ESC"     ,"1","2","3","4","5",
-        "TAB"     ,"Q","W","E","R","T",
-        "GRAVE","A","S","D","F","G",
-        "SHIFT"   ,"Z","X","C","V","B",
-        "LCTRL"  ,"LMETA","LALT"  ,"CMD","SPACE","LEFTBRACE"
-      ],
+        "ESC"    , "1"     , "2"    , "3"   , "4"     , "5"         ,
+        "TAB"    , "Q"     , "W"    , "E"   , "R"     , "T"         ,
+        "GRAVE"  , "A"     , "S"    , "D"   , "F"     , "G"         ,
+        "LSHIFT" , "Z"     , "X"    , "C"   , "V"     , "B"         ,
+        "LCTRL"  , "LMETA" , "LALT" , "CMD" , "SPACE" , "BACKSPACE"
+      ]          ,
       "right": [
-        "6"             ,"7"     ,"8"     ,"9"        ,"0"        ,"EQUAL",
-        "Y"             ,"U"     ,"I"     ,"O"        ,"P"        ,"SEMICOLON",
-        "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
-        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"APOSTROPHE"    ,"HOME",
-        "RIGHTBRACE"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
+        "6"             ,"7"     ,"8"     ,"9"        ,"0"          ,"EQUAL",
+        "Y"             ,"U"     ,"I"     ,"O"        ,"P"          ,"MINUS",
+        "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"       ,"APOSTROPHE",
+        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"SLASH"      ,"RSHIFT",
+        "SEMICOLON"     ,"ENTER" ,"RALT"  ,"BACKSLASH","LEFTBRACE"  ,"RIGHTBRACE"
       ]
     }
   ]
