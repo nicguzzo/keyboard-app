@@ -72,7 +72,7 @@ fn main () {
             match mm.as_ref() {
                "get_conf" => {
                   println!("get_conf");
-                  let mut file = File::open("conf/conf.json").unwrap();
+                  let mut file = File::open("/home/nico/.ninjakb/conf.json").unwrap();
                   let mut contents = String::new();
                   file.read_to_string(&mut contents).unwrap();
                   

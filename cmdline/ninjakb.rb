@@ -46,3 +46,7 @@ sendKeys(0,"right")
 sendKeys(1,"left")
 sendKeys(1,"right")
 $serialport.write("save")
+puts "layer0"
+$serialport.write("dump0")
+puts "layer1"
+$serialport.write("dump1")

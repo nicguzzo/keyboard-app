@@ -4,18 +4,18 @@
     {
       "name": "commands",
       "left": [
-        "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"MM+00+10" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,""      ,"" ,
-        "" ,"" ,"" ,"" ,"" ,"" 
+        "F1" ,"F2" ,"F3" ,"F4" ,"F5"      ,"F6" ,
+        "" ,"" ,"MU" ,"" ,""      ,"" ,
+        "CAPSLOCK" ,"ML" ,"MD" ,"MR" ,""      ,"" ,
+        "LSHIFT" ,"" ,"" ,"" ,""      ,"" ,
+        "LCTRL" ,"LMETA" ,"LALT" ,"" ,"" ,"" 
       ],
       "right": [
-        ""     ,"" ,"" ,"" ,"" ,"" ,
-        ""     ,"UP" ,"" ,"" ,"" ,"" ,
-        "LEFT" ,"DOWN" ,"RIGHT" ,"" ,"" ,"" ,
-        "" ,"" ,"" ,"" ,"" ,"" ,
-        "CMD" ,"" ,"" ,"" ,"" ,""
+        "F7"    ,"F8" ,"F9" ,"F10" ,"F11" ,"F12" ,
+        ""      ,"UP" ,"" ,"" ,"" ,"" ,
+        "LEFT"  ,"DOWN" ,"RIGHT" ,"" ,"" ,"DELETE" ,
+        "" ,"" ,"" ,"","" ,"PAGEDOWN" ,
+        "CMD","" ,"" ,"" ,"" ,"PAGEUP"
       ]
     },
     {
@@ -23,16 +23,16 @@
       "left": [
         "ESC"     ,"1","2","3","4","5",
         "TAB"     ,"Q","W","E","R","T",
-        "GRAVE"   ,"A","S","D","F","G",
-        "SHIFT"   ,"Z","X","C","V","B",
-        "LCTRL"  ,"LMETA","LALT"  ,"RIGHTBRACE","SPACE","LEFTBRACE"
+        "CAPSLOCK","A","S","D","F","G",
+        "LSHIFT"  ,"Z","X","C","V","B",
+        "LCTRL"   ,"LMETA","LALT" ,"GRAVE","SPACE",""
       ],
       "right": [
-        "6"             ,"7"     ,"8"     ,"9"        ,"0"        ,"EQUAL",
-        "Y"             ,"U"     ,"I"     ,"O"        ,"P"        ,"SEMICOLON",
-        "H"             ,"J"     ,"K"     ,"L"        ,"BKSP"     ,"DELETE",
-        "N"             ,"M"     ,"COMMA" ,"DOT"      ,"APOSTROPHE"    ,"HOME",
-        "CMD"    ,"ENTER" ,"RALT"  ,"BACKSLASH","SLASH"    ,"END"
+        "6"      ,"7"     ,"8"     ,"9"         ,"0"          ,"LEFTBRACE",
+        "Y"      ,"U"     ,"I"     ,"O"         ,"P"          ,"RIGHTBRACE",
+        "H"      ,"J"     ,"K"     ,"L"         ,"SEMICOLON"  ,"BKSP",
+        "N"      ,"M"     ,"COMMA" ,"DOT"       ,"SLASH"      ,"HOME",
+        "CMD"   ,"ENTER" ,"MINUS" ,"APOSTROPHE","BACKSLASH"  ,"END"
       ]
     }
   ]

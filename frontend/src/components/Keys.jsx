@@ -8,7 +8,7 @@ class Keys extends Component {
     const { conf, layer } = this.props;
     const {scancodes}=this.props
     //return (conf.layers) ? conf.layers[layer][side][ni]: null;
-    if (conf.layers){
+    if (conf.layers && scancodes){
       const code=conf.layers[layer][side][ni]
       const {us}=scancodes.layouts;
       return (us[code])? us[code] : code;
