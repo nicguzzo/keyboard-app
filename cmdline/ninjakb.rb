@@ -26,7 +26,7 @@ def sendKeys(layer,side)
       t='m'
       k=key
     else
-      if key.match(/^M[ULDR]/)
+      if key.match(/^M[ULDRB]/)
 	      t='p'
 	      k=key
       else  

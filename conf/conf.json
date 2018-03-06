@@ -5,17 +5,17 @@
       "name": "commands",
       "left": [
         "F1" ,"F2" ,"F3" ,"F4" ,"F5"      ,"F6" ,
-        "" ,"" ,"MU" ,"" ,""      ,"" ,
-        "CAPSLOCK" ,"ML" ,"MD" ,"MR" ,""      ,"" ,
-        "LSHIFT" ,"" ,"" ,"" ,""      ,"" ,
+        "" ,"MB1" ,"MU" ,"MB2" ,"MB3"      ,"" ,
+        "CAPSLOCK" ,"ML" ,"MD" ,"MR" ,"MB4"      ,"" ,
+        "LSHIFT" ,"" ,"" ,"" ,""      ,"MB5" ,
         "LCTRL" ,"LMETA" ,"LALT" ,"" ,"" ,"" 
       ],
       "right": [
         "F7"    ,"F8" ,"F9" ,"F10" ,"F11" ,"F12" ,
-        ""      ,"UP" ,"" ,"" ,"" ,"" ,
+        ""      ,"UP" ,"" ,"" ,"" ,"EQUAL" ,
         "LEFT"  ,"DOWN" ,"RIGHT" ,"" ,"" ,"DELETE" ,
-        "" ,"" ,"" ,"","" ,"PAGEDOWN" ,
-        "CMD","" ,"" ,"" ,"" ,"PAGEUP"
+        "BKSP" ,"" ,"" ,"","" ,"PAGEDOWN" ,
+        "CMD","" ,"BKSP" ,"" ,"" ,"PAGEUP"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "TAB"     ,"Q","W","E","R","T",
         "CAPSLOCK","A","S","D","F","G",
         "LSHIFT"  ,"Z","X","C","V","B",
-        "LCTRL"   ,"LMETA","LALT" ,"GRAVE","SPACE",""
+        "LCTRL"   ,"LMETA","LALT" ,"GRAVE","SPACE","BKSP"
       ],
       "right": [
         "6"      ,"7"     ,"8"     ,"9"         ,"0"          ,"LEFTBRACE",
