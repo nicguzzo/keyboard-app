@@ -2,8 +2,10 @@
 const fs = require('fs');
 const conf = JSON.parse(fs.readFileSync('../conf/conf.json', 'utf8'));
 const scancodes = JSON.parse(fs.readFileSync('../frontend/public/scancodes.json', 'utf8'));
-const SerialPort = require('serialport');
-const port = new SerialPort('/dev/ttyACM0', {
+const {SerialPort} = require('serialport');
+
+const port = new SerialPort({
+  path: conf['device'],
   baudRate: 115200
 });
 
@@ -38,7 +40,7 @@ async function sendKeys(layer,side){
 
 port.on("open",function(){
   sendKeys(1,'left');
-  //sendKeys(1,'right');
-  //port.write("save");
-  console.log('All keys sended');
+  sendKeys(1,'right');
+  port.write("save");
+  console.log('All keys sent');
 });

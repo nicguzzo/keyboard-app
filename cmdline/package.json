@@ -4,7 +4,7 @@
   "description": "",
   "main": "ninjakb.js",
   "dependencies": {
-    "serialport": "^6.1.1"
+    "serialport": "^10.4.0"
   },
   "devDependencies": {},
   "scripts": {
