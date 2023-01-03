@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import time
 import json
 import serial
 import re
@@ -35,6 +36,7 @@ def sendKeys(keys, layer, side):
 			cmd = "%s%d%02d%s%s" % (side[0],layer,i,t,k)
 			print(cmd)
 			ser.write(cmd.encode())
+			time.sleep(0.1)
 
 ser.open()
 if ser.is_open:
@@ -44,7 +46,10 @@ if ser.is_open:
 		sendKeys(layer['right'],l,'r')
 
 	ser.write(b'save')
+	time.sleep(0.1)
 	ser.write(b'dump0')
+	time.sleep(0.1)
 	ser.write(b'dump1')	
+	time.sleep(0.1)
 
 f.close
