@@ -9,7 +9,7 @@ const port = new SerialPort({
   baudRate: 115200
 });
 
-async function processKey(key, i, side, layer){
+function processKey(key, i, side, layer){
   const n =`0${i}`.slice(-2);
   let t='c';
   let k=null;
@@ -17,30 +17,45 @@ async function processKey(key, i, side, layer){
     t='m';
     k=key;
   }else{
-    k=scancodes.codes[key];
+    if(key.match(/^M[ULDRB]/)) {
+      t='p'
+      k=key
+    }else{      
+      k=scancodes.codes[key];
+    } 
+    //k=scancodes.codes[key];
   }
   if(k){
-    const cmd = `${side.slice(0,1)}${layer}${n}${t}${k}`;
-    //this.socket.send(cmd);
-
-    port.write(cmd,function(){
+    const cmd = `${side}${layer}${n}${t}${k}`;
+    port.write(cmd, function(){
       port.flush();
     });
     console.log(cmd);
   }
 }
-async function sendKeys(layer,side){
+function sendKeys(){
   const { layers } = conf;
-  const keys = layers[layer][side];
-  console.log(keys);
-  for (let i=0; i<keys.length; i++){
-    await processKey(keys[i], i, side, layer);
+  const sides_a=["left","right"]
+  const sides_aa=["l","r"]
+  for (let l=0; l<layers.length; l++){    
+    for (let s=0; s<2; s++){
+      const ss=sides_a[s];
+      const keys = layers[l][ss];
+//      console.log(keys);
+      for (let i=0; i<keys.length; i++){
+        processKey(keys[i], i, sides_aa[s], l);
+      }
+    }
   }
 }
 
-port.on("open",function(){
-  sendKeys(1,'left');
-  sendKeys(1,'right');
+port.on("open",  function(){
+  sendKeys();
   port.write("save");
   console.log('All keys sent');
+  console.log('dump0');
+  port.write("dump0");
+  console.log('dump1');
+  port.write("dump1");
+  
 });
